@@ -1,0 +1,13 @@
+.react-tabs__tab{
+    font-weight: 500;
+    font-size: large;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.react-tabs__tab--selected{
+    color: rgb(224, 64, 64);
+    border-bottom: 2px solid rgb(224, 64, 64);
+    
+}

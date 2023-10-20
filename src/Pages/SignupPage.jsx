@@ -139,7 +139,7 @@ const SignupPage = () => {
 
   return (
     <div
-      className="relative flex justify-center items-center h-screen"
+      className="relative flex justify-center items-center  h-screen"
       style={{
         backgroundImage:
           "url('https://i.ibb.co/Z13y6bG/DSLR-Camera-Lens-PNG-Free-File-Download.png')",
@@ -149,7 +149,7 @@ const SignupPage = () => {
       }}
     >
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-      <div className="bg-white bg-opacity-90 rounded-lg shadow-md p-10 relative z-10">
+      <div className="bg-white top-12 bg-opacity-90 rounded-lg shadow-md p-10 relative z-10">
         <h2 className="text-2xl font-bold mb-6 text-gray-800">Sign Up</h2>
         <form
           onSubmit={handleSubmit(onSubmit)}
@@ -252,7 +252,7 @@ const SignupPage = () => {
               className="input input-bordered w-full max-w-xs"
             />
           </div>
-          <div className="flex flex-col w-full">
+          {/* <div className="flex flex-col w-full">
             <label htmlFor="gender" className="text-gray-800">
               Gender
             </label>
@@ -266,7 +266,7 @@ const SignupPage = () => {
               <option value="female">Female</option>
               <option value="other">Other</option>
             </select>
-          </div>
+          </div> */}
           <div className="flex flex-col w-full">
             <label htmlFor="phoneNumber" className="text-gray-800">
               Phone Number
@@ -278,7 +278,7 @@ const SignupPage = () => {
               className="input input-bordered w-full max-w-xs"
             />
           </div>
-          <div className="flex flex-col w-full">
+          {/* <div className="flex flex-col w-full">
             <label htmlFor="address" className="text-gray-800">
               Address
             </label>
@@ -287,7 +287,7 @@ const SignupPage = () => {
               {...register("address")}
               className="form-textarea mt-1 block w-full rounded-md border-gray-300"
             />
-          </div>
+          </div> */}
           <div className="flex flex-col w-full">
             <p className="text-red-500">{passwordError}</p>
           </div>
@@ -300,7 +300,7 @@ const SignupPage = () => {
             </button>
           </div>
         </form>
-        <div className="divider">OR</div>
+        <div className="divider ">OR</div>
         <div className="flex flex-col justify-center text-center">
           <div className="col-span-2 mx-auto">
             <button

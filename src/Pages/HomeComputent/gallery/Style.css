@@ -1,0 +1,22 @@
+.my-modal{
+    position: relative;
+    
+          
+          
+   
+}
+
+.image-modal{
+    position: absolute;
+    left: 300px;
+    top: 20px;
+   z-index: 1;
+    margin-bottom: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+
+    
+}

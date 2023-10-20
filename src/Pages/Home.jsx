@@ -2,15 +2,20 @@ import React from 'react'
 import BrowsProfile from './HomeComputent/BrowsProfile'
 import Membership from './HomeComputent/Membership'
 import VipService from './HomeComputent/VipService'
+import Banner from './HomeComputent/banner/Banner'
+import Gallery from './HomeComputent/gallery/Gallery'
+
+
 
 function Home() {
   return (
     <div>
-      <div><h1>This is Home</h1></div>
+      <Banner></Banner>
       <Membership></Membership>
       <VipService></VipService>
     <BrowsProfile></BrowsProfile>
-    
+    <Gallery></Gallery>
+  
     </div>
   )
 }

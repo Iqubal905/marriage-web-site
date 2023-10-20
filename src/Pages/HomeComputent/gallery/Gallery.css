@@ -1,0 +1,9 @@
+.my-modal{
+    position: relative;
+}
+
+.my-modal-box{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

@@ -1,13 +1,13 @@
 import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
-import { AuthContext } from "../Providers/AuthProvider";
+// import { AuthContext } from "../Providers/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
 import { BsEyeFill, BsEyeSlashFill } from "react-icons/bs";
 
 const LoginPage = () => {
   const navigate = useNavigate();
-  const { login, googleSignIn } = useContext(AuthContext);
+  // const { login, googleSignIn } = useContext(AuthContext);
   const {
     register,
     handleSubmit,

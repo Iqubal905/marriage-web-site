@@ -1,10 +1,32 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function NavBar() {
+
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 520) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const navbarClasses = ` navbar z-10  max-w-screen-xl  bg-slate-800  text-pink-500 shadow-lg ${isFixed ? 'fixed top-0 left-6 right-0  bg-opacity-50' : 'bg-opacity-100'}`;
+
   return (
-    <div className='flex justify-center'>
-            <div className="navbar fixed z-10 bg-opacity-30 max-w-screen-xl  bg-slate-400 text-white">
+    <div className='flex justify-center '>
+            {/* <div className=" navbar  z-10 bg-opacity-0 max-w-screen-xl  bg-slate-400  text-pink-500"> */}
+            <div className={navbarClasses}>
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -19,7 +41,7 @@ function NavBar() {
     <a className="btn btn-ghost normal-case text-xl">ForeverAndEverUnion</a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu menu-horizontal px-1 text-xl font-bold">
     <li><Link to='/'>Home</Link></li>
         <li><Link to='/login'>Login</Link></li>
         

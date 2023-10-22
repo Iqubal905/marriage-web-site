@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
-import { AuthContext } from "../Providers/AuthProvider";
+// import { AuthContext } from "../Providers/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
 import { BsEyeFill, BsEyeSlashFill } from "react-icons/bs";
 import Swal from "sweetalert2";
@@ -12,7 +12,7 @@ const SignupPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
-  const { createUser, googleSignIn } = useContext(AuthContext);
+  // const { createUser, googleSignIn } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const {
